@@ -1,0 +1,36 @@
+POTREBNÉ OBRAZKY (nahrať do priečinka /public/tutorial):
+
+1. Kategória: Základy špirálovej dynamiky
+- intro_1.webp (OK - nahraté)
+- intro_2.webp (OK - nahraté)
+- intro_3.webp (OK - nahraté)
+- intro_4.webp (OK - nahraté)
+
+2. Kategória: Prečo sa zaujímať o ŠD?
+- why_1.webp (OK - nahraté)
+- why_2.webp (OK - nahraté)
+- why_3.webp (OK - nahraté)
+- why_4.webp (OK - nahraté)
+- why_5.webp (OK - nahraté)
+
+3. Kategória: Jednotlivé úrovne špirálovej dynamiky
+- stages_1.webp (OK - nahraté)
+- stages_2.webp (OK - nahraté)
+- stages_3.webp (OK - nahraté)
+- stages_4.webp (OK - nahraté)
+- stages_5.webp (OK - nahraté)
+- stages_6.webp (OK - nahraté)
+- stages_7.webp (OK - nahraté)
+- stages_8.webp (OK - nahraté)
+- stages_9.webp (OK - nahraté)
+
+4. Kategória: Príklady využitia a prínosu špirálovej dynamiky
+- use_1.webp (OK - nahraté)
+- use_2.webp (OK - nahraté)
+- use_3.webp (OK - nahraté)
+- use_4.webp (OK - nahraté)
+- use_5.webp (OK - nahraté)
+- use_6.webp (OK - nahraté)
+- use_7.webp (OK - nahraté)
+- use_8.webp (OK - nahraté)
+- use_9.webp (OK - nahraté)
