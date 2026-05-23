@@ -128,8 +128,8 @@ export default function TutorialViewer() {
             exit={{ opacity: 0, x: -10 }}
             className="absolute inset-0 flex flex-col p-2"
           >
-            <div className="flex-1 flex items-center justify-center relative overflow-hidden">
-              <div className="relative w-full h-full flex items-center justify-center bg-black/10 rounded-xl">
+            <div className="flex-1 flex flex-col items-center justify-center relative overflow-hidden gap-4">
+              <div className="relative w-full h-full flex items-center justify-center bg-black/10 rounded-xl p-4">
                 <img 
                   src={currentSlide.imageUrl} 
                   alt={currentSlide.title}
@@ -138,6 +138,14 @@ export default function TutorialViewer() {
                      (e.target as HTMLImageElement).src = 'https://placehold.co/1200x800/171717/FFFFFF?text=' + encodeURIComponent(currentSlide.title);
                   }}
                 />
+              </div>
+              <div className="w-full max-w-4xl px-2">
+                <h2 className="text-lg font-bold text-white mb-2">{currentSlide.title}</h2>
+                {currentSlide.description && (
+                  <p className="text-sm leading-6 text-neutral-300">
+                    {currentSlide.description}
+                  </p>
+                )}
               </div>
             </div>
           </motion.div>
