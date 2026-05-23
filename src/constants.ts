@@ -56,37 +56,6 @@ export const TUTORIAL_CATEGORIES: Category[] = [
       { id: 'u9', title: 'Ekologické myslenie', imageUrl: '/tutorial/use_9.webp' },
     ],
   },
-  {
-    id: 'network-security',
-    title: '5. SIEŤOVÁ BEZPEČNOSŤ',
-    color: '#0066CC', // Blue
-    slides: [
-      {
-        id: 'n1',
-        title: 'Sieťový skill: Plné práva a dohľad',
-        description: 'Pridaj mu sieťový skill aj spätne a získaj prehľad o pripojených zariadeniach.',
-        imageUrl: '/tutorial/use_1.webp',
-      },
-      {
-        id: 'n2',
-        title: 'Aktuálna sieťová aktivita',
-        description: 'Sprav poriadnu analýzu aktuálnej aktivity na sieti a odhaľ podozrivé spojenia.',
-        imageUrl: '/tutorial/use_2.webp',
-      },
-      {
-        id: 'n3',
-        title: 'Posledná 1,5 hodiny',
-        description: 'Zameraj sa na podozrivé aktivity počas posledných 90 minút.',
-        imageUrl: '/tutorial/use_3.webp',
-      },
-      {
-        id: 'n4',
-        title: 'Prehľad pripojených zariadení',
-        description: 'Získaj prehľad o všetkých pripojených zariadeniach a ich bezpečnostnom stave.',
-        imageUrl: '/tutorial/use_4.webp',
-      },
-    ],
-  },
 ];
 
 export const UI_STRINGS = {
