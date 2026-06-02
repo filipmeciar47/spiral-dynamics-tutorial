@@ -139,7 +139,7 @@ export default function TutorialViewer() {
           >
             <img
               src={currentSlide.imageUrl}
-              alt={currentSlide.title}
+              alt=""
               className="w-full h-full object-contain select-none pointer-events-none"
               onError={(e) => {
                 (e.target as HTMLImageElement).src =
