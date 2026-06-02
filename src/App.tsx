@@ -9,7 +9,8 @@ export default function App() {
   return (
     <div className="w-full h-screen bg-transparent text-white overflow-hidden relative font-sans">
       <div
-        className="absolute inset-0 flex items-center justify-center p-4 z-50 cursor-pointer"
+        className="absolute inset-0 flex items-center justify-center p-4 z-50 cursor-pointer backdrop-blur-sm"
+        style={{ background: 'rgba(0, 0, 0, 0.45)' }}
         onClick={handleClose}
       >
         <div

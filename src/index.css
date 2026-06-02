@@ -5,8 +5,9 @@
 }
 
 @layer base {
-  body {
-    @apply bg-neutral-950 text-neutral-100 antialiased overflow-hidden selection:bg-blue-500/30;
+  html, body {
+    background: transparent !important;
+    @apply text-neutral-100 antialiased overflow-hidden selection:bg-blue-500/30;
   }
 }
 
