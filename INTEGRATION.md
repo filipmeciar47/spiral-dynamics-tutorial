@@ -15,27 +15,26 @@ const openTutorial = () => {
   <div style={{
     position: 'fixed',
     inset: 0,
-    backgroundColor: 'rgba(0,0,0,0.8)',
-    backdropFilter: 'blur(4px)',
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    backdropFilter: 'blur(10px)',
+    WebkitBackdropFilter: 'blur(10px)',
     zIndex: 9999,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center'
   }}>
-    <div style={{
-      width: '90vw',
-      height: '90vh',
-      maxWidth: '1200px',
-      backgroundColor: '#000',
-      borderRadius: '16px',
-      overflow: 'hidden',
-      position: 'relative'
-    }}>
-      <iframe 
-        src="https://tutorial.vasadomena.com?lang=sk" 
-        style={{ width: '100%', height: '100%', border: 'none' }}
-      />
-    </div>
+    <iframe
+      src="https://tutorial.vasadomena.com?lang=sk"
+      allowTransparency={true}
+      style={{
+        width: '700px',
+        height: 'clamp(400px, 78vh, 560px)',
+        border: 'none',
+        background: 'transparent',
+        borderRadius: '16px',
+        overflow: 'hidden',
+      }}
+    />
   </div>
 )}
 ```
