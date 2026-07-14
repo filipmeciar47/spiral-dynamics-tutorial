@@ -8,6 +8,7 @@ export interface Slide {
 export interface Category {
   id: string;
   title: string;
+  titleEn: string;
   color: string;
   slides: Slide[];
 }

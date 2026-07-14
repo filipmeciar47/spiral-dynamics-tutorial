@@ -4,6 +4,7 @@ export const TUTORIAL_CATEGORIES: Category[] = [
   {
     id: 'fundamentals',
     title: '1. ZÁKLADY',
+    titleEn: '1. BASICS',
     color: '#D2B48C', // Beige
     slides: [
       { id: 's1', title: 'Prečo vidíme svet tak rozdielne?', imageUrl: '/tutorial/intro_1.webp' },
@@ -15,6 +16,7 @@ export const TUTORIAL_CATEGORIES: Category[] = [
   {
     id: 'why-sd',
     title: '2. VÝHODY',
+    titleEn: '2. BENEFITS',
     color: '#FF4500', // OrangeRed
     slides: [
       { id: 'wh1', title: 'Osobnostný rozvoj', imageUrl: '/tutorial/why_1.webp' },
@@ -27,6 +29,7 @@ export const TUTORIAL_CATEGORIES: Category[] = [
   {
     id: 'v-memes',
     title: '3. FAREBNÉ ÚROVNE',
+    titleEn: '3. COLOR STAGES',
     color: '#1E90FF', // DodgerBlue
     slides: [
       { id: 'st1', title: 'Béžová (Inštinktívna)', imageUrl: '/tutorial/stages_1.webp' },
@@ -43,6 +46,7 @@ export const TUTORIAL_CATEGORIES: Category[] = [
   {
     id: 'use-cases',
     title: '4. VYUŽITIE V PRAXI',
+    titleEn: '4. PRACTICAL USE',
     color: '#32CD32', // LimeGreen
     slides: [
       { id: 'u1', title: 'Osobné vzťahy', imageUrl: '/tutorial/use_1.webp' },

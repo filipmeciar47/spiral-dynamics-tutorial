@@ -18,6 +18,12 @@ export default function TutorialViewer() {
   const currentSlide = currentCategory.slides[currentSlideIndex];
   const t = UI_STRINGS[lang];
 
+  // EN má vlastnú sadu obrázkov v /tutorial/en/; ostatné jazyky používajú SK obrázky.
+  const imgSrc =
+    lang === 'en'
+      ? currentSlide.imageUrl.replace('/tutorial/', '/tutorial/en/')
+      : currentSlide.imageUrl;
+
   const isFirst = currentCategoryIndex === 0 && currentSlideIndex === 0;
   const isLast =
     currentCategoryIndex === TUTORIAL_CATEGORIES.length - 1 &&
@@ -94,7 +100,7 @@ export default function TutorialViewer() {
                     }
               }
             >
-              {cat.title}
+              {lang === 'en' ? cat.titleEn : cat.title}
             </button>
           ))}
         </nav>
@@ -138,11 +144,17 @@ export default function TutorialViewer() {
             className="absolute inset-0 flex items-center justify-center"
           >
             <img
-              src={currentSlide.imageUrl}
+              src={imgSrc}
               alt=""
               className="w-full h-full object-contain select-none pointer-events-none"
               onError={(e) => {
-                (e.target as HTMLImageElement).src =
+                const img = e.target as HTMLImageElement;
+                // EN obrázok chýba → skús SK verziu, až potom placeholder.
+                if (lang === 'en' && img.src.endsWith(imgSrc)) {
+                  img.src = currentSlide.imageUrl;
+                  return;
+                }
+                img.src =
                   'https://placehold.co/1200x800/090e1d/FFFFFF?text=' +
                   encodeURIComponent(currentSlide.title);
               }}
